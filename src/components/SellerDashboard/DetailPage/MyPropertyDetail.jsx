@@ -4,7 +4,7 @@ import { Bed, Bath, Maximize2, Barcode as Garage } from 'lucide-react';
 // import ImageCarousel from './ImageCarousel';
 import SellerImageCarousel from './ImageCarousel';
 import { FaLocationDot } from "react-icons/fa6";
-import { useLocation } from 'react-router-dom';
+import { useLocation,useNavigate } from 'react-router-dom';
 import {files} from '../../../constants/index';
 
 // Sample data - replace with your actual data
@@ -16,6 +16,7 @@ const propertyImages = [
 ];
 
 function SellerMyPropertyDetail() {
+  const nav = useNavigate()
 
   const location = useLocation();
   const { house } = location.state || {}; // Ensure state exists to avoid errors
@@ -47,7 +48,7 @@ function SellerMyPropertyDetail() {
                   <p className="mt-4 text-muted-foreground">{house.description}</p>
                 </div>
               </div>
-              <div className="grid mt-4 grid-cols-2 gap-4 sm:grid-cols-4">
+              <div className="grid mt-4 grid-cols-2 gap-4 sm:grid-cols-5">
                 <div className="flex items-center gap-2">
                   <Bed className="h-5 w-5 text-muted-foreground" />
                     <div className="font-semibold">{house.bedrooms}</div>
@@ -68,6 +69,7 @@ function SellerMyPropertyDetail() {
                     <div className="font-semibold">{house.garage}</div>
                     <div className="text-sm text-muted-foreground">Garage</div>
                 </div>
+          <button onClick={()=>{nav('/seller-post-edit', { state: { house } })}} className="bg-[#1E3FB4] w-20 h-10 rounded-lg border px-3 py-2 mt-2 mb-2 text-white">Edit</button>
               </div>
             </div>
           </div>

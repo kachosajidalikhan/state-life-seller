@@ -89,13 +89,14 @@ import MyPropertiesSeller from './components/SellerDashboard/MyProperties'
 import SellerMyPropertyDetail from './components/SellerDashboard/DetailPage/MyPropertyDetail'
 import { SellerSidebar } from './components/SellerDashboard/layout/Sidebar'
 import SellerPostAd from "./components/SellerDashboard/SellerPostAd";
+import SellerPostEdit from "./components/SellerDashboard/DetailPage/propertyedit";
 
 
 
 
 export default function App() {
-  const [userRole, setUserRole] = useState("guest"); // State to manage user role
-  // const [userRole, setUserRole] = useState("seller"); // State to manage user role
+  // const [userRole, setUserRole] = useState("guest"); // State to manage user role
+  const [userRole, setUserRole] = useState("seller"); // State to manage user role
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -164,6 +165,7 @@ export default function App() {
                 <Route path="/chats" element={<Chats />} />
                 <Route path="/my-property-detail/:id" element={<SellerMyPropertyDetail />} />
                 <Route path="/seller-post-ad" element={<SellerPostAd />} />
+                <Route path="/seller-post-edit" element={<SellerPostEdit />} />
               </Routes>
               <Footer />
             </main>

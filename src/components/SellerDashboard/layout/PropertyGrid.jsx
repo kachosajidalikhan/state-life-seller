@@ -9,9 +9,9 @@ import {files} from '../../../constants/index'
 
 // Data for the houses (replace with API data if needed)
 const houses = [
-    { id: 1,agentRating:5,agentName:'Ali Khan', name: 'Khan House',description:'lovely house',garage:'1', type: 'For Sale',bedrooms:'4',bathrooms:'3',area:'2500', username: 'Lorem', price: '$120', location: 'Downtown, West Side', image:  files.dash},
-    { id: 2,agentRating:5,agentName:'Ali Sewani', name: 'Sewani House',description:'lovely house',garage:'2', type: 'For Rent',bedrooms:'5',bathrooms:'2',area:'2200', username: 'Lorem House', price: '$145/Month', location: 'Downtown, West Side', image: files.dash },
-    { id: 3,agentRating:5,agentName:'Abbas Ali ', name: 'Abbas House',description:'lovely house',garage:'1', type: 'For Sale',bedrooms:'4',bathrooms:'2',area:'2100', username: 'Lorem House', price: '$160/Month', location: 'Downtown, West Side', image:files.dash},
+    { id: 1,phone: 12345678,email:"xyz@gmail.com",agentRating:5,agentName:'Ali Khan', name: 'Khan House',description:'lovely house',garage:'1', type: 'For Sale',bedrooms:'4',bathrooms:'3',area:'2500', username: 'Lorem', price: '$120', location: 'Downtown, West Side', image:  files.dash},
+    { id: 2,phone: 12345678,email:"xyz@gmail.com",agentRating:5,agentName:'Ali Sewani', name: 'Sewani House',description:'lovely house',garage:'2', type: 'For Rent',bedrooms:'5',bathrooms:'2',area:'2200', username: 'Lorem House', price: '$145/Month', location: 'Downtown, West Side', image: files.dash },
+    { id: 3,phone: 12345678,email:"xyz@gmail.com",agentRating:5,agentName:'Abbas Ali ', name: 'Abbas House',description:'lovely house',garage:'1', type: 'For Sale',bedrooms:'4',bathrooms:'2',area:'2100', username: 'Lorem House', price: '$160/Month', location: 'Downtown, West Side', image:files.dash},
 ];
 
 const SellerPropertyGrid = () => {

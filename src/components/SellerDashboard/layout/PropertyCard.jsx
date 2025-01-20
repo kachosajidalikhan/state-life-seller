@@ -63,6 +63,8 @@ export function SellerPropertyCard({
   location,
   image,
   agent,
+  phone,
+  email
 }) {
   return (
     <Card className="overflow-hidden">
