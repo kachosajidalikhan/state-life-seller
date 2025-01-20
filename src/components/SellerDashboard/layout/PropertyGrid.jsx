@@ -93,9 +93,9 @@ const SellerPropertyGrid = () => {
                                     <span className="bg-[#E5F0FF] text-[#1252AE] p-2 rounded-full">
                                         <FaShare />
                                     </span>
-                                    <span className="bg-[#E5F0FF] text-[#1252AE] p-2 rounded-full">
+                                    {/* <span className="bg-[#E5F0FF] text-[#1252AE] p-2 rounded-full">
                                         <FaHeart />
-                                    </span>
+                                    </span> */}
                                 </div>
                             </div>
                         </div>
