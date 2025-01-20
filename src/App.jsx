@@ -95,8 +95,8 @@ import SellerPostEdit from "./components/SellerDashboard/DetailPage/propertyedit
 
 
 export default function App() {
-  // const [userRole, setUserRole] = useState("guest"); // State to manage user role
-  const [userRole, setUserRole] = useState("seller"); // State to manage user role
+  const [userRole, setUserRole] = useState("guest"); // State to manage user role
+  // const [userRole, setUserRole] = useState("seller"); // State to manage user role
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
